@@ -2,8 +2,7 @@
 <html>
 <head>
 <style>
-    
-pu {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -16,11 +15,11 @@ pu {
     
 }
 
-il {
+li {
     float: left;
 }
 
-il a {
+li a {
     display: block;
     color: white;
     text-align: center;
@@ -28,7 +27,7 @@ il a {
     text-decoration: none;
 }
 
-il a:hover {
+li a:hover {
     background-color: #111;
 }
 body {
@@ -39,107 +38,25 @@ body {
     background-size: cover;         /* Generic*/
 }
 h1 {
-    text-indent: 80px;
+    text-indent: 90px;
     text-align: left;
     color: white;
     width: 320px;
     padding: 10px;
     background-color: gray;
     margin: 0; 
-    position: absolute;
+    position: fixed;
     top: 0;
         
-}
-h2 {
-   text-align: left;
-   right: 31px;
-   position: relative;
-   text-indent: 30px;
-}
-h3 {
-   text-align: left;
-   right: 31px;
-   position: relative;
-   text-indent: 30px;
-   text-decoration: underline;
-   font-size: 130%;
 }
 .boxed {
   width: 500px; 
     margin: 0 auto; 
-    background: darkgray; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, darkgray , gray); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, darkgray , gray); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, darkgray , gray); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, darkgray , gray); /* Standard syntax */
-    padding: 20px;
-    position: relative;
-    border: 3px solid slategray;
-    top: 60px;
-}
-.boxed2 {
-  width: 500px; 
-    margin: 0 auto; 
-    background-color: slategray;
+    background-color: darkgray;
     padding: 20px;
     position: relative;
     top: 60px;
-
 }
-ul.img-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-ul.img-list li {
-  display: inline-block;
-  height: 150px;
-  margin: 0 1em 1em 0;
-  position: relative;
-  width: 150px;
-  right: -10px;
-}
-
-ul.img-list img {
-  border-radius: 15px;
-}
-
-span.text-content {
-  background: rgba(0,0,0,0.6);
-  border-radius: 15px;
-  color: white;
-  cursor: pointer;
-  display: table;
-  font-size: 1.5em;
-  height: 150px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 150px;
-  opacity: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
-}
-
-span.text-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-ul.img-list li:hover span.text-content {
-  opacity: 1;
-}
-img.theme {
-  border: 15px solid #3e2b14;
-  padding: 10px;
-        
-}
-
 </style>
 </head>
 <body>
@@ -147,35 +64,30 @@ img.theme {
 </audio>
 
     <h1>MaxyWriter</h1>
-<pu>
-  <il><a class="active" href="#home">Home</a></il>
-  <il><a href="builds.html">Builds</a></il>
-  <il><a href="#contact">Projects</a></il>
-</pu>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="builds.html">Builds</a></li>
+  <li><a href="#contact">Projects</a></li>
+</ul>
 <div class="boxed">
-    <h2>Theme: Bill Nye The Science Guy</h2>
-    <img class="theme" src="bill.jpg" style="width:200px;height:228px;">
-    <h3>Mains ATM 6.18</h3>
-    <ul class="img-list">
-    <li><img class="alignnone size-thumbnail wp-image-300" alt="2010-09-29 15.37.14" src="top.png" width="150" height="150"><br>
-    <span class="text-content"><span>Yorick, Gnar</span></span></li>
-    
-    <li><img class="alignnone size-thumbnail wp-image-300" alt="2010-09-29 15.37.14" src="jungle.png" width="150" height="150"><br>
-    <span class="text-content"><span>Zac, Gragas</span></span></li>
-    
-    <li><img class="alignnone size-thumbnail wp-image-300" alt="2010-09-29 15.37.14" src="mid.png" width="150" height="150"><br>
-    <span class="text-content"><span>Viktor, Malzahar</span></span></li>
-    
-    <li><img class="alignnone size-thumbnail wp-image-300" alt="2010-09-29 15.37.14" src="adc.png" width="150" height="150"><br>
-    <span class="text-content"><span>Lucian</span></span></li>
-    
-    <li><img class="alignnone size-thumbnail wp-image-300" alt="2010-09-29 15.37.14" src="support.png" width="150" height="150"><br>
-    <span class="text-content"><span>Blitzcrank, Bard</span></span></li>
-    </ul>
+    <p>Theme: Bill Nye The Science Guy</p>
+    <img src="bill.jpg" style="width:200px;height:228px;">
+    <p>Mains ATM 6.18</p>
+    <p>Top<p>
+    <p><a href="builds.html#yorick">Yorick</a></p>
+    <p>Gnar</p>
+    <p>Jungle<p>
+    <p>Zac<p>
+    <p>Gragas</p>
+    <p>Mid<p>
+    <p>Viktor<p>
+    <p>Malzahar</p>
+    <p>ADC<p>
+    <p>Lucian</p>
+    <p>Support<p>
+    <p>Blitzcrank<p>
+    <p>Bard</p>
 </div>
-
-
-
 
 </body>
 </html>
