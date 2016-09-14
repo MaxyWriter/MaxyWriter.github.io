@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-ul {
+lu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -80,30 +80,72 @@ h2 {
     border: 3px solid slategray;
     top: 60px;
 }
+.demo-1 {
+    position:relative;
+    width:300px; 
+   height:200px;
+    overflow:hidden;
+    float:left;
+    margin-right:20px;
+    background-color:rgba(26,76,110,0.5)
+}
+.demo-1 p,.demo-1 h2 {
+    color:#fff;
+    padding:10px;
+    left:-20px;
+    top:20px;
+    position:relative
+}
+.demo-1 p {
+    font-family:'Lato';
+    font-size:12px;
+    line-height:18px;
+    margin:0
+}
+.demo-1 h2 {
+    font-family:'Lato';
+    font-size:20px;
+    line-height:24px;
+    margin:0;
+}
+.effect img {
+    position:absolute;
+    margin:-15px 0;
+    right:0;
+    top:0;
+    cursor:pointer;
+    -webkit-transition:top .4s ease-in-out,right .4s ease-in-out;
+    -moz-transition:top .4s ease-in-out,right .4s ease-in-out;
+    -o-transition:top .4s ease-in-out,right .4s ease-in-out;
+    transition:top .4s ease-in-out,right .4s ease-in-out
+}
+.effect img.top:hover {
+    top:-230px;
+    right:-330px;
+    padding-bottom:200px;
+    padding-left:300px
+}
 </style>
     
 </head>
 <body>
 
     <h1>MaxyWriter</h1>
-<ul>
-  <il><a href="index.html">Home</a></il>
-  <il><a class="active" href="#news">Builds</a></il>
-</ul>
+<lu>
+    <il><a href="index.html">Home</a></il>
+    <il><a href="builds.html">Builds</a></il>
+    <il><a href="#contact">Projects</a></il>
+    <il><a class="active" href="#recom">Recommended</a></il>
+</lu>
 <div class="boxed">
-    <h2>Jakob's Builds and Guides</h2>
-    <div class="blur pic">
-    </div>
-    <h2>Other Builds and Guides</h2>
-    <div class="blur pic">
-        <a href="http://www.lolking.net/guides/398076" target="_blank"><img src="builds/illaoi.png" alt="Illaoi"></a>
-        <a href="http://www.mobafire.com/league-of-legends/build/reworked-yorick-build-guide-6-18-wip-487780" target="_blank"><img src="builds/yorick.png" alt="Yorick"></a>
-        <a href="http://www.lolking.net/guides/367946#items" target="_blank"><img src="builds/GnarSquare.png" alt="Gnar"></a>
-        <a href="http://www.lolking.net/guides/359106#items" target="_blank"><img src="builds/Fiora_Square_0.png" alt="Fiora"></a>
-        <a href="http://www.lolking.net/guides/356717" target="_blank"><img src="builds/Zac.png" alt="Zac"></a>
-    </div>
+    <ul class="demo-1 effect">
+        <li>
+                <h4>This is a cool title!</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+        </li>
+        <li><img class="top" src="op.png" alt=""/></li>
+</ul>
 </div>
 
 </body>
 </html>
-
